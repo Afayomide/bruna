@@ -1,0 +1,23 @@
+.faq-link{
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.faq-child{
+    flex: 1 0 30%; 
+}
+
+.faq{
+    margin: 0 12rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+  }
+.faqs_images{
+    border-radius: 1rem;
+    width: 20rem;
+}
