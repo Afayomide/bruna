@@ -10,7 +10,7 @@
     width: 13rem;
 }
 .banner img{
-  height: 10rem;
+  height: 20rem;
   width: 100%;
 }
 .banner-container{
@@ -24,6 +24,15 @@
   display: flex !important;
   flex-direction: column;
   align-items: center;
+}
+
+@media (max-width: 1000px) { 
+  .banner-container{
+    widtH :100%;
+  }
+  .banner img{
+    height: 10rem;
+  }
 }
 
 
