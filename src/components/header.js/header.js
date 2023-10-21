@@ -42,13 +42,14 @@ function Header (){
           <a className="nav-link disabled" aria-disabled="true">Disabled</a>
         </li>
       </ul>
-      <form className="d-flex">
     
-        <input className="form-control me-2" type="search" onChange={handleChange} value={searchValue} placeholder="enter the product name or code" aria-label="Search"/>
-        <a href={url}><button className="btn btn-outline-success"> <a href={url}>Search</a></button></a>
-      </form>
     </div>
   </div>
+  <form className="d-flex">
+    
+    <input className="form-control me-2 enter-product" type="search" onChange={handleChange} value={searchValue} placeholder="enter the product name or code" aria-label="Search"/>
+    <a href={url}><button className="btn btn-outline-success"> <a href={url}>Search</a></button></a>
+  </form>
 </nav> 
         </header>
     )
