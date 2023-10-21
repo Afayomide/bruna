@@ -26,5 +26,30 @@
     margin: 2rem;
 }
 .faqs-container img {
+    height: 18rem;
     border-radius: 2rem;
+}
+.faqs-list {
+    margin-top: 2rem;
+}
+.faqs-banner{
+    width: 100%;
+    height: 20rem;
+}
+.faqs-media{
+    display: flex;
+    justify-content: space-around;
+}
+
+@media(max-width:1000px){
+    .faqs-banner{
+        height: 10rem;
+    }
+    .faqs-media{
+        flex-direction: column;
+        align-items:  space-between;
+    }
+    .faqs-media img {
+        margin-top: 2rem;
+    }
 }
