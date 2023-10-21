@@ -60,7 +60,7 @@ function TopTen(){
       <div className='top-ten-container'>
         <div className='top-ten'>
         <h2>
-            BRUNA'S TOP 10
+            <span className='brown-text'>BRUNA</span>'S TOP 10
         </h2>
             <Swiper
           grabCursor={true}

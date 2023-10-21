@@ -1,6 +1,7 @@
 import faqsData from "./faqsdata"
 import { Link } from "react-router-dom"
 import clean from "../../../assets/faqs/clean.webp"
+import { BsCheck } from "react-icons/bs"
 import "./faqs.css"
 
 function Faqs () {
@@ -27,8 +28,8 @@ function Faqs () {
 
 export function Clean () {
     return(
-     <div>
-         <h4>
+     <div className="faqs-container">
+         <h4 className="brown-text">
          HOW TO CLEAN THE PARTS?
   
          </h4>
@@ -37,9 +38,12 @@ export function Clean () {
   
   To clean properly, you need a container, neutral detergent or soap, warm water and a soft cloth. 
    
-  First, place the semi-jewels in a container and pour in warm water with neutral detergent. Leave the pieces to soak for a few hours and then change the water, adding the detergent and warm water again, leaving the pieces to soak for a few more hours. Then, remove the pieces from the container and rinse well under running water. Afterwards, dry them with a soft cloth or a hairdryer. And your parts are cleaned!
+  <br/><BsCheck/> place the semi-jewels in a container and pour in warm water with neutral detergent. 
+
+  <br/><BsCheck/>Leave the pieces to soak for a few hours and then change the water, adding the detergent and warm water again, leaving the pieces to soak for a few more hours. 
+  <br/><BsCheck/>Then, remove the pieces from the container and rinse well under running water. Afterwards, dry them with a soft cloth or a hairdryer. And your parts are cleaned!
    
-  For more practical and simple cleaning, use a flannel to polish your semi-jewelry after wearing it. Taking this care further helps preserve the pieces.
+  <br/>For more practical and simple cleaning, use a flannel to polish your semi-jewelry after wearing it. Taking this care further helps preserve the pieces.
    
   Watch the video below and check out how to properly clean your Bruna jewelry.
   

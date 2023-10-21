@@ -21,3 +21,9 @@
     border-radius: 1rem;
     width: 20rem;
 }
+.faqs-container{
+    margin: 2rem;
+}
+.faqs-container img {
+    border-radius: 2rem;
+}
