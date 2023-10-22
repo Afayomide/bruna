@@ -88,7 +88,7 @@ function TopTen(){
        
        
 
-          pagination={{ el: '.swiper-pagination', clickable: true }}
+          pagination={{ clickable: true }}
           modules={[Autoplay, EffectFade, Pagination,Navigation]}
           className="swiper-container"
             >            <SwiperNavButtons/>
@@ -149,10 +149,12 @@ export function CatalogSwiper(){
        
        
 
-          pagination={{ el: '.swiper-pagination', clickable: true }}
+          pagination={{ clickable: true }}
           modules={[Autoplay, EffectFade, Pagination,Navigation]}
           className="swiper-container"
-            >            <SwiperNavButtons/>
+            >            
+              
+            <SwiperNavButtons/>
 
 
             {CatalogData.map(Cards)}       

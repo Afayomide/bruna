@@ -21,6 +21,11 @@ form input ,textarea, button{
   width: .5rem;
   margin-right: 1rem;    
 }
+form button{
+    background-color: #cda557;
+    color: white;
+    border:none;
+}
 @media(max-width: 800px){
     input,textarea{
         width: 20em;
