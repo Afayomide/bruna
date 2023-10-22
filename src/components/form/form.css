@@ -1,0 +1,34 @@
+
+input,textarea{
+    width: 30em;
+    background-color:#1111;
+    margin-bottom: 1em  ;
+    border: 2px dotted  #cda557;
+color: #111;
+}
+
+input:active{
+    color: white;
+}
+
+textarea{
+    height: 7em;
+}
+form input ,textarea, button{
+    border-radius: .5em;
+}
+.label input{
+  width: .5rem;
+  margin-right: 1rem;    
+}
+@media(max-width: 800px){
+    input,textarea{
+        width: 20em;
+    }
+}
+
+@media(max-width: 400px){
+    input,textarea{
+        width: 17em;
+    }
+}

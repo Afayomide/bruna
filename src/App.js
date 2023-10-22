@@ -10,6 +10,10 @@ import { Care } from './components/main/Faqs/faqs';
 import { Diff } from './components/main/Faqs/faqs';
 import { Identify } from './components/main/Faqs/faqs';
 import { Successful } from './components/main/Faqs/faqs';
+import Contact from './components/contact/contact';
+import { TechSpec } from './components/main/Faqs/faqs';
+import { Warranty } from './components/main/Faqs/faqs';
+import { Distrubutors } from './components/main/Faqs/faqs';
 
 function App() {
   return (
@@ -25,6 +29,14 @@ function App() {
       <Route path="/Differencesbetweemsemi-jewelryandcostumejewelry" element= {<Diff/>}/>
       <Route path="/HowtoIdentifyBruna'ssemi-jewelry" element= {<Identify/>}/>
       <Route path="/Howtobecomeasuccessfulconsultant" element= {<Successful/>}/>
+      <Route path="/contactus" element= {<Contact/>}/>
+      <Route path="/techspec" element= {<TechSpec/>}/>
+      <Route path="/warranty" element= {<Warranty/>}/>
+      <Route path="/distrubutors" element= {<Distrubutors/>}/>
+
+
+
+
      </Routes>
      <Footer/>
      </BrowserRouter>

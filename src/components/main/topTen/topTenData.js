@@ -61,6 +61,6 @@ const TopTenData =[
         id:10, 
         name: `BB 3062`,
         image: ten
-    },
+    }
 ]
 export default TopTenData

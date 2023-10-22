@@ -16,21 +16,20 @@ function Footer () {
      <li><Link className="link" to="/">Home</Link></li>
         <li><Link className="link" to="/bruna">Bruna</Link></li>
         <li><Link className="link" to="/">Production</Link></li>
-        <li><Link className="link" to="/">Guarantee</Link></li>
-        <li><Link className="link" to="/">Distrubutors</Link></li>
-        <li><Link className="link" to="/">Frequently Asked Questions</Link></li>
-        <li><Link className="link" to="/">Technical Specifications</Link></li>
-        <li><Link className="link" to="/">Contact Us</Link></li>
+        <li><Link className="link" to="/warranty">warranty</Link></li>
+        <li><Link className="link" to="/distrubutors">Distrubutors</Link></li>
+        <li><a className="link" href="https://www.brunasemijoias.com.br/duvidas-frequentes">Frequently Asked Questions</a></li>
+        <li><Link className="link" to="/techspec">Technical Specifications</Link></li>
+        <li><Link className="link" to="/contactus">Contact Us</Link></li>
      </ul>
      <div>
         <BsPinMap className="icon"/>
 
         <p>
-        BRUNA JEWELRY<br/>
-NEW BALOGUN ULTRA MODERN SHOPPING PLAZA,<br/>
-SUITE SA34, 2ND FLOOR,<br/>
-47/49 BALOGUN STREET,<br/>
-LAGOS ISLAND, NIGERIA.<br/>
+        BALOGUN ULTRA MODERN PLAZA,<br/>
+        SUITE SA34, 2ND FLOOR,<br/>
+        47/49 BALOGUN STREET, <br/>
+        LAGOS ISLAND, NIGERIA.<br/>
 </p>
      </div>
      <div className="icons">

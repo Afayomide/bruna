@@ -6,6 +6,7 @@ import "swiper/css/effect-fade";
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+import { SwiperNavButtons } from './swipernav';
 import {EffectFade, Autoplay, Pagination, Navigation} from 'swiper/modules'; 
 
 import TopTenData from './topTenData';
@@ -28,14 +29,15 @@ export function  Banner () {
             disableOnInteraction: false
           }}      
           modules={[Autoplay, EffectFade, Pagination,Navigation]}
-           >
+           >    
+
         <SwiperSlide className='banner'>
-          <img src={Banner1}/>
+          <img src={Banner1} loading='lazy'/>
         </SwiperSlide>
-        <SwiperSlide className='banner'>
+        <SwiperSlide className='banner' loading="lazy">
           <img src={Banner2}/>
         </SwiperSlide>
-        <SwiperSlide className='banner'>
+        <SwiperSlide className='banner' loading="lazy">
           <img src={Banner3}/>
         </SwiperSlide>
        </Swiper>
@@ -50,7 +52,7 @@ function TopTen(){
   
      return(   
        <SwiperSlide className='swiper-slide-top-ten'>
-          <img src={image}/> 
+          <img src={image} loading='lazy'/> 
           <p>{name}</p>
       </SwiperSlide>
      )
@@ -74,15 +76,24 @@ function TopTen(){
             depth: 100,
             modifier: 2.5,
           }}
+          breakpoints={{
+            640: {
+              slidesPerView: 3
+            },
+            1000:{
+              slidesPerView: 5
+            }
+          }}
        
        
 
           pagination={{ el: '.swiper-pagination', clickable: true }}
-          navigation={{el: '.swiper-navigation', clickable: true}}
           modules={[Autoplay, EffectFade, Pagination,Navigation]}
           className="swiper-container"
-            >
-            {TopTenData.map(Cards)}
+            >            <SwiperNavButtons/>
+
+
+            {TopTenData.map(Cards)}       
             </Swiper>
         </div>
         </div>

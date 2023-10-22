@@ -18,12 +18,20 @@
   margin: 2em auto;  
 }
 .swiper-slide-top-ten{
-  width: 15rem !important;
-  height: 15rem !important;
   border: 1px solid rgb(191, 186, 186);
   display: flex !important;
   flex-direction: column;
   align-items: center;
+}
+.swiper-buttons button {
+  border: none;
+  color: white;
+  background-color:  #cda557;
+  margin: .5rem .2rem
+}
+.swiper-buttons{
+  display: flex;
+  justify-content: end;
 }
 
 @media (max-width: 1000px) { 
@@ -33,6 +41,9 @@
   .banner img{
     height: 10rem;
   }
+}
+@media (max-width: 1000px) { 
+
 }
 
 
