@@ -8,6 +8,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { SwiperNavButtons } from './swipernav';
 import {EffectFade, Autoplay, Pagination, Navigation} from 'swiper/modules'; 
+import CatalogData from './catalogdata';
 
 import TopTenData from './topTenData';
 import Banner1 from "../../../assets/banners1.webp"
@@ -78,10 +79,10 @@ function TopTen(){
           }}
           breakpoints={{
             640: {
-              slidesPerView: 3
+              slidesPerView: 3,
             },
             1000:{
-              slidesPerView: 5
+              slidesPerView: 5,
             }
           }}
        
@@ -100,4 +101,65 @@ function TopTen(){
     )
 }
 
+export function CatalogSwiper(){
+
+  function Cards(props){
+    const {id,name,image,href} = props
+  
+     return( 
+       <SwiperSlide className='swiper-slide-top-ten'>
+       <a href={href}> 
+
+          <img src={image} loading='lazy'/> 
+          <p>{name}</p>
+          </a>
+      </SwiperSlide>
+     )
+  }
+  
+    return(
+      <div className='top-ten-container'>
+        <div className='top-ten'>
+        <h2 className='bruna-catalog'>
+        <a href='https://www.brunasemijoias.com.br/catalogo/'>
+            <span className='brown-text'>BRUNA</span>'S CATALOG
+            </a>
+        </h2>
+            <Swiper
+          grabCursor={true}
+          centeredSlides={true}
+          loop={true}
+          slidesPerView={1}
+          spaceBetween={20}
+          coverflowEffect={{
+            rotate: 0,
+            stretch: 0,
+            depth: 100,
+            modifier: 2.5,
+          }}
+          breakpoints={{
+            640: {
+              slidesPerView: 3,
+            },
+            1000:{
+              slidesPerView: 5,
+
+            }
+          }}
+       
+       
+
+          pagination={{ el: '.swiper-pagination', clickable: true }}
+          modules={[Autoplay, EffectFade, Pagination,Navigation]}
+          className="swiper-container"
+            >            <SwiperNavButtons/>
+
+
+            {CatalogData.map(Cards)}       
+            </Swiper>
+        </div>
+        </div>
+    )
+}
 export default TopTen
+

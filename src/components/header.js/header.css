@@ -1,10 +1,32 @@
-nav {
+nav{
+ 
     background: #fcfaf8 url("../../assets/bgtopo.jpg") top center repeat;
 }
 header img{
     width: 8rem;
     height: 6rem;
 }
+.search-form{
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+}
+.search-form button{
+    background-color:  #cda557;
+}
 .enter-product{
-    width: 16.7rem;
+    width: 18rem;
+}
+.enter-product::placeholder{
+    font-size: .7rem;
+}
+
+@media(max-width:350px){
+   
+.enter-product{
+   width: 15rem
+}
+.search-form button{
+    font-size: .7rem;
+}
 }

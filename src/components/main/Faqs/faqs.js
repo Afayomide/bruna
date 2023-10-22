@@ -185,7 +185,7 @@ export function Identify (){
     HOW TO IDENTIFY BRUNA’S SEMI-JEWELRY
 
     </h4>
-    <div className="faq-display">
+    <div className="faq-display identify-items">
     <p>
     Bruna's semi-jewels are highly accepted pieces in the market due to their advanced design and the quality of their plating. Therefore, some companies, with the intention of confusing the customer, try to copy our pieces, even imitating the logo. Therefore, always be aware of imitations.
     </p>

@@ -59,6 +59,10 @@
 .distro div a:hover{
     text-decoration: underline;
 }
+.identify-items{
+    display: flex;
+    flex-direction: column;
+}
 
 @media(max-width:1000px){
     .faqs-container{
@@ -79,6 +83,21 @@
         flex-direction: column;
     }
     .faqs-container img,iframe{
-        width: 23rem;
+        width: 18rem;
+        height: 12rem;
+    }
+    .faqs_images{
+        width: 80vw
+    }
+    .faq{
+        margin: auto;
+    }
+}
+@media(max-width:300px){
+    .faqs_images{ 
+        width: 80vw;
+    }
+    .faq{
+        margin:auto;
     }
 }

@@ -45,12 +45,15 @@ function Header (){
     
     </div>
   </div>
-  <form className="d-flex">
+ 
+</nav>  
+<div className="search-form">
+<form className="d-flex">
     
     <input className="form-control me-2 enter-product" type="search" onChange={handleChange} value={searchValue} placeholder="enter the product name or code" aria-label="Search"/>
     <a href={url}><button className="btn btn-outline-success"> <a href={url}>Search</a></button></a>
   </form>
-</nav> 
+  </div>
         </header>
     )
 }

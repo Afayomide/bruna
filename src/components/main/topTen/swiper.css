@@ -18,6 +18,8 @@
   margin: 2em auto;  
 }
 .swiper-slide-top-ten{
+  text-align: center;
+  border-radius: 1rem;
   border: 1px solid rgb(191, 186, 186);
   display: flex !important;
   flex-direction: column;
@@ -33,6 +35,13 @@
   display: flex;
   justify-content: end;
 }
+.swiper-container{
+  margin: 0 auto;
+}
+.bruna-catalog{
+  text-decoration: underline;
+  text-decoration-color: #cda557;
+}
 
 @media (max-width: 1000px) { 
   .banner-container{
@@ -41,6 +50,10 @@
   .banner img{
     height: 10rem;
   }
+  .top-ten img {
+    width: 10rem;
+    height: 9rem ;
+}
 }
 @media (max-width: 1000px) { 
 
